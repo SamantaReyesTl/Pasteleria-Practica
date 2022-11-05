@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pastelería | Pastechel x </title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<div class="caja">
+				<h1 class="titulo-principal"> Pastechel X  | Bake shop ~ Bakery<img class="logo" alt="Logo de la Pastelería" src="img/Logo_pasteleria.png"></h1>
+			</div>	
+		</header>
+
+		<main>
+
+
+			<section class="armar_pastel">
+				<h2 class="Sabores_pastel">¡Arma tu pastel!</h2>
+				<ul class="tamaño_pastel">
+					<h2 class="Sabores_pastel">¿Tamaño?</h2>
+					<li>Personal............ $80</li>
+					<li>Chico................$120</li>
+					<li>Madiano..............$180</li>
+					<li>Grande...............$240</li>
+					<li>Especial.............$360</li>
+					<p>El tamaño especial, varia de tamaño segun sea su numero de rebanadas de preferencia</p>
+				</ul>
+
+				<ul class="sabores_pastel">
+					<h2 class="Sabores_pastel">¿Sabor?</h2>
+					<li>Vainilla</li>
+					<li>Chocolate</li>
+					<li>Piñon</li>
+					<li>3 leches</li>
+					<li>Red Velvet</li>
+				</ul>
+			</section>
+
+			<section class="decoracion_general">
+				<ul class="decoracion">
+					<h2>¿Comó lo hacemos especial?</h2>
+					<p class="descripcion_producto">Algunos contienen costo adicional</p>
+					<li>
+
+						<dl>
+							<h2>Toppings Sencillos</h2>
+							<dt class="producto">Naturales.........................sin costo adicional</dt>
+							<dd class="descripcion">Nuez, Arándanos, Fresas, Coco, Durazno (cualquiera a elegir)</dd>
+							<dt>Galletas...............................$50</dt>
+							<dd class="descripcion">Oreo, Emperador, palitos de chocolate</dd>
+							<dt>Perlas Chocolate..........$20</dt>
+							<dd class="descripcion">De color: Dorado, Rojas, Moradas, Plateadas Blancas</dd>
+							<dt>Otros............................$30</dt>
+							<dd class="descripcion">Lunetas colores, Lunetas capuchino, Granillo chocolate, Granillo colores, Chocomenta</dd>
+						</dl>
+						<p class="descripcion_producto">El pastel se decora con los toppings que elija, estos pueden conbinarse</p>
+					</li>
+					<li>
+						<h2>Toppings Especiales</h2>
+						<dl>
+							<dt>Chocolates Charlos V...................$80</dt>
+							<dd class="descripcion">Se decora el pastel con barras del chocolate</dd>
+							<dt>Chocolate Ferrero...................$120</dt>
+							<dd class="descripcion">Se decora el pastel con el numero de piezas que desee</dd>
+							<dt>Chocolate M&M...................$80</dt>
+							<dd class="descripcion">Se decora el pastel con los chocolates</dd>
+							<dt>Chocolates Crunch...................$80</dt>
+							<dd class="descripcion">Se decora el pastel con fragmentos del chocolate</dd>
+						</dl>
+						<p class="descripcion_producto">El pastel se decora con los toppings que elija, estos pueden conbinarse</p>
+					</li>
+					<p class="descripcion_producto">Si requiere algúna decoracion en especifica en fondant o crema, puede llamar a nuestros numeros de local para mayor informacion</p>
+				</ul>
+
+			</section>
+
+			<section>
+				<h2>Ubicación</h2>
+				<table>
+					<thead>
+						<th>Local </th>
+						<th>Dirección </th>
+						<th>Teléfono </th>
+						<th>Horarios </th>
+					</thead>
+					<tr>
+						<td>Local 1 </td>
+						<td> Av. San Juan las flores, #45, Col. Juarez </td>
+						<td> 225 456 1596 </td>
+						<td> 9:00am a 9:00pm </td>
+					</tr>
+					<tr>
+						<td>Local 2 </td>
+						<td> Calle Kaito, #465, Col. Santiago Verde </td>
+						<td> 555 140 4801 </td>
+						<td> 9:00am a 7:30pm </td>
+					</tr>
+				</table>
+			</section>
+
+			<section>
+				<h2>¡Realiza tu pedido!</h2>
+				<form>
+					<!-- Sucursal a elegir -->
+					<label for="sucursal"> Sucursal: </label>
+					<select id="sucursal">
+						<option value="sucursalNumero1">Local 1</option>
+						<option value="sucursalNumero2">Local 2</option>
+					</select>
+
+					<!-- Informacion del usuario -->
+					<label for="nombre"> Da tu Nombre: </label>
+					<input type="text" id="nombre" placeholder="Nombre Apellido">
+					<label for="telefono"> Da tu Teléfono: </label>
+					<input type="tel" id="telefono" placeholder="000 000 0000">
+					<label for="correo"> Tu Correo: </label>
+					<input type="email" id="correo" placeholder="correo@email.com">
+					<label for="direccion">Dirección: </label>
+					<input type="text" id="direccion" placeholder="Calle, numero, Colonia">
+
+					<!-- Sobre el pastel -->
+					<p>Tamaño de pastel</p>
+					<input type="checkbox" id="option1" value="option1"><label for="option1"> Personal </label>
+					<br>
+					<input type="checkbox" id="option2" value="option2"><label for="option2"> Chico </label>
+					<br>
+					<input type="checkbox" id="option3" value="option3"><label for="option3"> Mediano</label>
+					<br>
+					<input type="checkbox" id="option4" value="option4"><label for="option4"> Grande </label>
+					<br>
+					<input type="checkbox" id="option5" value="option5"><label for="option5"> Especial (en "descripcion" especifica el número de personas o número de rebanadas)</label>
+					<br>
+					<br>
+
+					<p>Sabores del Pastel</p>
+					<input type="checkbox" id="option1" value="option1"><label for="option1"> Vainilla</label>
+					<br>
+					<input type="checkbox" id="option2" value="option2"><label for="option2"> Chocolate</label>
+					<br>
+					<input type="checkbox" id="option3" value="option3"><label for="option3"> 3 Leches</label>
+					<br>
+					<input type="checkbox" id="option4" value="option4"><label for="option4"> Red velvet</label>
+					<br
+					<br>
+
+					<p>Adornos del Pastel</p>
+					<input type="checkbox" id="option1" value="option1"><label for="option1"> Natural</label>
+					<br>
+					<input type="checkbox" id="option2" value="option2"><label for="option2"> Galletas </label>
+					<br>
+					<input type="checkbox" id="option3" value="option3"><label for="option3"> Perlas chocolate</label>
+					<br>
+					<input type="checkbox" id="option4" value="option4"><label for="option4"> Chocolate Carlos V </label>
+					<br>
+					<input type="checkbox" id="option5" value="option5"><label for="option5"> Chocolate Ferrero</label>
+					<br>
+					<input type="checkbox" id="option1" value="option1"><label for="option1"> Chocolate M&M</label>
+					<br>
+					<input type="checkbox" id="option2" value="option2"><label for="option2"> Chocolate Crunch </label>
+					<br>
+					<input type="checkbox" id="option3" value="option3"><label for="option3"> Otros</label>
+					<br>
+					<br>
+
+					<label for="descripcion"> Descripción:<br> </label>
+					<textarea cols="50" rows="4" id="descripcion" placeholder="Mi pastel sera especial con..."></textarea>
+					<br>
+
+					<input type="submit" value="Enviar Pedido" class="enviar">
+
+				</form>
+			</section>
+		</main>
+
+		<footer>
+			<img class="logo" src="img/Logo_pasteleria.png">
+			<p class="copyright">&copy Copyright Todos los Derechos Reservados - 2022</p>
+		</footer>
+	</body>
+</html>
